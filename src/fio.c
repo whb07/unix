@@ -18,8 +18,8 @@
 #include "reg.h"
 #include "slp.h"
 #include "user.h"
+#include "prf.h"
 #include <stdint.h>
-#include <stdio.h>
 /*
  * Convert a user supplied
  * file descriptor into a pointer

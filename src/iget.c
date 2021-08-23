@@ -8,6 +8,7 @@
 #include "buf.h"
 #include "conf.h"
 #include "filsys.h"
+#include "prf.h"
 #include "inode.h"
 #include "maths.h"
 #include "param.h"
@@ -17,7 +18,6 @@
 #include "slp.h"
 #include "systm.h"
 #include "user.h"
-#include <stdio.h>
 
 /*
  * Look up an inode by device,inumber.

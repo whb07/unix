@@ -15,4 +15,5 @@ void free(DeviceCode *dev, unsigned int bno);
 intptr_t *ialloc(DeviceCode *dev);
 void ifree(DeviceCode *dev, int ino);
 void update(void);
+void pipe(void);
 #endif // UNIX_SRC_ALLOC_H_

@@ -25,9 +25,9 @@
  *	2 if name is to be deleted
  */
 struct inode *namei(int (*func)(), unsigned int flag) {
-  register struct inode *dp;
-  register c;
-  register char *cp;
+  struct inode *dp;
+  char *c;
+  char *cp;
   int eo;
 
   /*
@@ -186,14 +186,14 @@ out:
  * Return the next character from the
  * kernel string pointed at by dirp.
  */
-schar() { return (*u.u_dirp++ & 0377); }
+intptr_t schar(void) { return (*u.u_dirp++ & 0377); }
 
 /*
  * Return the next character from the
  * user string pointed at by dirp.
  */
-uchar() {
-  register c;
+int uchar(void) {
+  int c;
 
   c = fubyte(u.u_dirp++);
   if (c == -1)

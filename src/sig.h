@@ -7,8 +7,14 @@
 
 #include <stdint.h>
 
-intptr_t issig(void);
+int issig(void);
 
 void psig(void);
-
+void psignal(int *p, int sig);
+void signal(int tp, int sig);
+void stop(void);
+int core(void);
+int grow(char* sp);
+void ptrace(void);
+int procxmt(void);
 #endif // UNIX_SRC_SIG_H_

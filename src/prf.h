@@ -7,4 +7,9 @@
 #include "buf.h"
 void panic(char *s);
 void prdev(char *str, DeviceCode *dev);
+void printf(char fmt[],...);
+void deverror(int *bp, int o1, int o2);
+void putchar(char *c);
+void prdev(char *str, DeviceCode *dev);
+void printn(int n, int b);
 #endif // UNIX_SRC_PRF_H

@@ -11,7 +11,7 @@ add_library(lib
         src/bio.c
         src/bio.h src/malloc.h src/slp.h src/prf.h src/alloc.h src/alloc.c
         src/subr.h src/iget.h src/pipe.h src/clock.h src/clock.c
-        src/asmcalls.h src/sig.h src/fio.c src/fio.h src/nami.h src/iget.c src/maths.h src/rdwri.h src/nami.c)
+        src/asmcalls.h src/sig.h src/fio.c src/fio.h src/nami.h src/iget.c src/maths.h src/rdwri.h src/nami.c src/pipe.c src/prf.c src/rdwri.c src/sig.c src/sys1.h)
 
 # Define headers for this library. PUBLIC headers are used for
 # compiling the library, and will be added to consumers' build

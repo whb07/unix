@@ -10,4 +10,7 @@
 void wakeup(intptr_t *chan);
 void sleep(intptr_t *chan, unsigned int pri);
 void setpri(struct proc *up);
+void setrun(struct proc *p);
+void expand(int newsize);
+int swtch(void);
 #endif // UNIX_SRC_SLP_H
